@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { JSX } from 'react';
+import InitialCard from './components/start/InitialCard';
 
 function App(): JSX.Element {
   return (
@@ -26,6 +27,8 @@ function App(): JSX.Element {
             </Button>
           </Toolbar>
         </AppBar>
+        <InitialCard imageUrl={''} title={'Giovanny Page'} message={'Welcome to my personal website.'} /> 
+
         <Container maxWidth="md" sx={{ marginTop: theme.spacing(4) }}>
           <Routes>
             <Route path="/" element={<Home />} />

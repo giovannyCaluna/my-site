@@ -1,4 +1,4 @@
-import Section from './cv/Section';
+import Section from './Section';
 
 function WorkExperience() {
   return (

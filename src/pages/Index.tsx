@@ -4,14 +4,12 @@ import Skills from '../components/cv/Skills';
 import Education from '../components/cv/Education';
 import { JSX } from 'react';
 
-function Home(): JSX.Element {
+function Index(): JSX.Element {
   return (
     <StyledBox>
-      <Profile />
-      <Skills />
-      <Education />
+   Holaaa
     </StyledBox>
   );
 }
 
-export default Home;
+export default Index;
