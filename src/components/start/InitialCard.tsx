@@ -1,7 +1,7 @@
 import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '@/assets/
+
 
 interface InitialCardProps {
   imageUrl: string;
@@ -10,12 +10,13 @@ interface InitialCardProps {
 }
 
 const InitialCard: React.FC<InitialCardProps> = ({ imageUrl, title, message }) => {
+  const image = require('./../../assets/gio.jpg');
   return (
     <Card sx={{ maxWidth: 345, margin: 'auto', padding: 2 }}>
       <CardMedia
         component="img"
         height="200"
-        //image={gio}
+        image={image}
         alt="Welcome image"
       />
 
