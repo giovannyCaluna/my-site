@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button, Container, CssBaseline } from '@mui/material';
 import Home from './pages/Home';

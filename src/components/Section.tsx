@@ -1,6 +1,11 @@
 import { Box, Typography } from '@mui/material';
 
-function Section({ title, children }) {
+interface SectionProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+function Section({ title, children }: SectionProps) {
   return (
     <Box component="section" sx={{ marginBottom: 4 }}>
       <Typography
