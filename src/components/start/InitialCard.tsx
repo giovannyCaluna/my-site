@@ -4,9 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 
-
-const InitialCard: React.FC = () => {
-  const image = require('./../../assets/gio.jpg');
+interface InitialCardProps {
+  url:string,
+  title:string,
+  description:string
+}
+const InitialCard: React.FC<InitialCardProps> = (props) => {
+  const image = require(props.url);
   const { t } = useTranslation();
 
 
@@ -21,7 +25,7 @@ const InitialCard: React.FC = () => {
 
       <CardContent>
         <Typography variant="h5" component="div" sx={{ marginBottom: 2 }}>
-          {t('welcome')}
+          {t('education')}
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 3 }}>
         {t('greeting')}

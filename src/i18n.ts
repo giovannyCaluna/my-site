@@ -11,9 +11,11 @@ interface WorkExperienceItem {
 interface Resources {
   [key: string]: {
     translation: {
+      home: string;
       welcome: string;
       greeting: string;
       start: string;
+      explore: string;
       certifications: string;
       cert1: string;
       cert2: string;
@@ -36,6 +38,7 @@ interface Resources {
       skillsList: string[];
       workExperience: string;
       workExperienceList: WorkExperienceItem[];
+
     };
   };
 }
@@ -43,9 +46,11 @@ interface Resources {
 const resources: Resources = {
   en: {
     translation: {
-      welcome: "Welcome to my personal website",
-      greeting: "Hello, I'm Giovanny Caluña, how are you?",
+      home: "Home",
+      welcome: "Welcome to my personal blog!",
+      greeting: "  Hi! I’m Giovanny Caluña, a passionate software developer with expertise in Java, TypeScript, React, and more. I have a strong background in computer science and specialize in creating efficient, reliable solutions in the financial systems domain. Explore my work, connect with me, and let’s build something amazing together!",
       start: "Start",
+      explore: "Explore",
       certifications: "Certifications",
       cert1: "Google Cloud Associate Cloud Engineer (Jan 2022)",
       cert2: "SQL for Data Analysis Masterclass (Udemy, July 2021)",
@@ -114,9 +119,11 @@ const resources: Resources = {
   },
   es: {
     translation: {
+      home: "Inicio",
       welcome: "Bienvenido a mi blog personal",
-      greeting: "Hola, Soy Giovanny Caluna ¿cómo estás?",
+      greeting: "¡Hola! Soy Giovanny Caluña, un apasionado desarrollador de software con experiencia en Java, TypeScript, React y más. Tengo una sólida formación en informática y me especializo en la creación de soluciones eficientes y confiables en el ámbito de los sistemas financieros. ¡Explora mi trabajo, conéctate conmigo y construyamos algo increíble juntos!",
       start: "Iniciar",
+      explore: "Explorar",
       certifications: "Certificaciones",
       cert1: "Google Cloud Associate Cloud Engineer (Ene 2022)",
       cert2: "SQL para el Análisis de Datos Masterclass (Udemy, Julio 2021)",

@@ -14,7 +14,6 @@ function Home(): JSX.Element {
       <Profile />
       <Skills />
       <Education />
-      <WorkExperience />
       <Certifications />
     </StyledBox>
   );
