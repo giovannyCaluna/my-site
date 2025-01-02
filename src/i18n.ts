@@ -13,6 +13,7 @@ interface Resources {
     translation: {
       home: string;
       welcome: string;
+      hobbies: string;
       greeting: string;
       start: string;
       explore: string;
@@ -47,6 +48,7 @@ const resources: Resources = {
   en: {
     translation: {
       home: "Home",
+      hobbies: "Hobbies",
       welcome: "Welcome to my personal blog!",
       greeting: "  Hi! I’m Giovanny Caluña, a passionate software developer with expertise in Java, TypeScript, React, and more. I have a strong background in computer science and specialize in creating efficient, reliable solutions in the financial systems domain. Explore my work, connect with me, and let’s build something amazing together!",
       start: "Start",
@@ -120,6 +122,7 @@ const resources: Resources = {
   es: {
     translation: {
       home: "Inicio",
+      hobbies: "Pasatiempos",
       welcome: "Bienvenido a mi blog personal",
       greeting: "¡Hola! Soy Giovanny Caluña, un apasionado desarrollador de software con experiencia en Java, TypeScript, React y más. Tengo una sólida formación en informática y me especializo en la creación de soluciones eficientes y confiables en el ámbito de los sistemas financieros. ¡Explora mi trabajo, conéctate conmigo y construyamos algo increíble juntos!",
       start: "Iniciar",
