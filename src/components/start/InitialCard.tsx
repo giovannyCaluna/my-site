@@ -1,40 +1,39 @@
 import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 
-interface InitialCardProps {
-  imageUrl: string;
-  title: string;
-  message: string;
-}
 
-const InitialCard: React.FC<InitialCardProps> = ({ imageUrl, title, message }) => {
+const InitialCard: React.FC = () => {
   const image = require('./../../assets/gio.jpg');
+  const { t } = useTranslation();
+
+
   return (
     <Card sx={{ maxWidth: 345, margin: 'auto', padding: 2 }}>
       <CardMedia
         component="img"
-        height="200"
+        height="auto"
         image={image}
         alt="Welcome image"
       />
 
       <CardContent>
         <Typography variant="h5" component="div" sx={{ marginBottom: 2 }}>
-          {title}
+          {t('welcome')}
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 3 }}>
-          {message}
+        {t('greeting')}
         </Typography>
         <Button
           variant="contained"
           color="primary"
           component={Link}
-          to="/"
+          to="/home"
           fullWidth
         >
-          Go to Home
+         {t("start")}
         </Button>
       </CardContent>
     </Card>
