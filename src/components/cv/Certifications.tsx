@@ -1,12 +1,17 @@
+// src/components/Certifications.tsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Section from './Section';
 
 function Certifications() {
+  const { t } = useTranslation(); // `t` is the translation function
+
   return (
-    <Section title="Certifications">
+    <Section title={t('certifications')}> {/* Translate the section title */}
       <ul style={{ paddingLeft: '20px' }}>
-        <li>Google Cloud Associate Cloud Engineer (Jan 2022)</li>
-        <li>SQL for Data Analysis Masterclass (Udemy, July 2021)</li>
-        <li>Practical Test-Driven Development for Java Programmers (Udemy, March 2021)</li>
+        <li>{t('cert1')}</li> {/* Translate the certification item */}
+        <li>{t('cert2')}</li>
+        <li>{t('cert3')}</li>
       </ul>
     </Section>
   );

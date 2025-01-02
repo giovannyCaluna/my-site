@@ -1,13 +1,18 @@
+// src/components/Header.tsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Typography, Box } from '@mui/material';
 
 function Header() {
+  const { t } = useTranslation(); // `t` is the translation function
+
   return (
     <Box component="header" sx={{ textAlign: 'center', marginBottom: 4 }}>
       <Typography variant="h4" component="h1">
-        Giovanny E. Caluña
+        Giovanny E. Caluña {/* Translate the name */}
       </Typography>
       <Typography variant="body1">
-        Email: giovannycaluna@gmail.com | Phone: +36707859869 | Location: Szeged, Hungary
+        {t('email')} | {t('phone')} | {t('location')} {/* Translate the contact details */}
       </Typography>
     </Box>
   );

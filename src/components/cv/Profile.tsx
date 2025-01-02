@@ -1,11 +1,16 @@
-import Section from './Section';
+// src/components/Profile.tsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Typography } from '@mui/material';
+import Section from './Section';
 
 function Profile() {
+  const { t } = useTranslation(); // `t` is the translation function
+
   return (
-    <Section title="Profile">
+    <Section title={t('profile')}> {/* Translate the section title */}
       <Typography variant="body1">
-        Dynamic and adaptable computer scientist with a proven track record in software development and AI/ML model customization. Skilled in Java (Spring Boot), TypeScript (React, Angular, Nest), Python, and R, with experience in decentralized web applications (Blockchain, Web3). Highly motivated and open to relocation, ready to contribute to innovative projects.
+        {t('profileContent')} {/* Translate the content */}
       </Typography>
     </Section>
   );

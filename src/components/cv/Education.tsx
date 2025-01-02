@@ -1,22 +1,27 @@
-import Section from './Section';
+// src/components/Education.tsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { List, ListItem, Typography } from '@mui/material';
+import Section from './Section';
 
 function Education() {
+  const { t } = useTranslation(); // `t` is the translation function
+
   const education = [
     {
-      degree: 'MSc in Computer Science',
-      institution: 'University of Szeged, Hungary (2022-2024)',
-      thesis: 'Privacy-Based Blockchain Electronic Voting System',
+      degree: t('degree1'),
+      institution: t('institution1'),
+      thesis: t('thesis1'),
     },
     {
-      degree: 'BSc in Information Technology',
-      institution: 'Yachay Tech University, Ecuador (2014-2020)',
-      thesis: 'Classification of Plant Leaf Diseases Using Deep Learning Techniques',
+      degree: t('degree2'),
+      institution: t('institution2'),
+      thesis: t('thesis2'),
     },
   ];
 
   return (
-    <Section title="Education">
+    <Section title={t('education')}> {/* Translate the section title */}
       <List>
         {education.map((edu, index) => (
           <ListItem key={index} sx={{ display: 'block', marginBottom: 2 }}>

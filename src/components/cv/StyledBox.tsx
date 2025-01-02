@@ -11,6 +11,15 @@ const StyledBox = styled(Box)(({ theme }) => ({
   paddingBottom: 40,
   paddingRight: 120,
   paddingLeft: 120,
+
+  // Apply padding = 0 on mobile devices
+  [theme.breakpoints.down('sm')]: {
+    padding: theme.spacing(2),
+    paddingTop: 40,
+    paddingBottom: 40,
+    paddingRight: 10,
+    paddingLeft: 10,
+  },
 }));
 
 export default StyledBox;
