@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.ca67ef22.css",
-    "main.js": "/my-site/static/js/main.ccc28e48.js",
+    "main.js": "/my-site/static/js/main.6eeedd15.js",
     "static/js/488.fc8c46bb.chunk.js": "/my-site/static/js/488.fc8c46bb.chunk.js",
     "static/media/gio.jpg": "/my-site/static/media/gio.2b2f5cb7d9b5e2c8f818.jpg",
     "static/media/ecuadorianflag.png": "/my-site/static/media/ecuadorianflag.ad539ade8af2f81db938.png",
     "static/media/usflag.png": "/my-site/static/media/usflag.82efa07a8eabda6736be.png",
     "index.html": "/my-site/index.html",
     "main.ca67ef22.css.map": "/my-site/static/css/main.ca67ef22.css.map",
-    "main.ccc28e48.js.map": "/my-site/static/js/main.ccc28e48.js.map",
+    "main.6eeedd15.js.map": "/my-site/static/js/main.6eeedd15.js.map",
     "488.fc8c46bb.chunk.js.map": "/my-site/static/js/488.fc8c46bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca67ef22.css",
-    "static/js/main.ccc28e48.js"
+    "static/js/main.6eeedd15.js"
   ]
 }
