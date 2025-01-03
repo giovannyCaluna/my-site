@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@mui/material';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
+import Education from './pages/education/EducationPage';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
+        <Route path='/education' element={<Education />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

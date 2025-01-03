@@ -15,6 +15,7 @@ interface Resources {
       welcome: string;
       hobbies: string;
       greeting: string;
+      thesis: string;
       start: string;
       explore: string;
       certifications: string;
@@ -22,6 +23,7 @@ interface Resources {
       cert2: string;
       cert3: string;
       education: string;
+      education_subtitle: string;
       degree1: string;
       institution1: string;
       thesis1: string;
@@ -52,12 +54,14 @@ const resources: Resources = {
       welcome: "Welcome to my personal blog!",
       greeting: "  Hi! I’m Giovanny Caluña, a passionate software developer with expertise in Java, TypeScript, React, and more. I have a strong background in computer science and specialize in creating efficient, reliable solutions in the financial systems domain. Explore my work, connect with me, and let’s build something amazing together!",
       start: "Start",
+      thesis: "Thesis",
       explore: "Explore",
       certifications: "Certifications",
       cert1: "Google Cloud Associate Cloud Engineer (Jan 2022)",
       cert2: "SQL for Data Analysis Masterclass (Udemy, July 2021)",
       cert3: "Practical Test-Driven Development for Java Programmers (Udemy, March 2021)",
       education: "Education",
+      education_subtitle: "My higher education journey was marked by two transformative stages that allowed me to grow both professionally and personally.",
       degree1: "MSc in Computer Science",
       institution1: "University of Szeged, Hungary (2022-2024)",
       thesis1: "Privacy-Based Blockchain Electronic Voting System",
@@ -126,16 +130,18 @@ const resources: Resources = {
       welcome: "Bienvenido a mi blog personal",
       greeting: "¡Hola! Soy Giovanny Caluña, un apasionado desarrollador de software con experiencia en Java, TypeScript, React y más. Tengo una sólida formación en informática y me especializo en la creación de soluciones eficientes y confiables en el ámbito de los sistemas financieros. ¡Explora mi trabajo, conéctate conmigo y construyamos algo increíble juntos!",
       start: "Iniciar",
+      thesis: "Tesis",
       explore: "Explorar",
       certifications: "Certificaciones",
       cert1: "Google Cloud Associate Cloud Engineer (Ene 2022)",
       cert2: "SQL para el Análisis de Datos Masterclass (Udemy, Julio 2021)",
       cert3: "Desarrollo Orientado a Pruebas para Programadores Java (Udemy, Marzo 2021)",
       education: "Educación",
+      education_subtitle: "Mi trayectoria en la educación superior estuvo marcada por dos etapas transformadoras que me permitieron crecer tanto profesional como personalmente.",
       degree1: "Máster en Ciencias de la Computación",
       institution1: "Universidad de Szeged, Hungría (2022-2024)",
-      thesis1: "Sistema de Votación Electrónica Blockchain Basado en Privacidad",
-      degree2: "Licenciatura en Tecnología de la Información",
+      thesis1: "Sistema de Votación Electrónica Blockchain Enfocado en Privacidad",
+      degree2: "Ingeniería en Tecnologías de la Información",
       institution2: "Universidad Yachay Tech, Ecuador (2014-2020)",
       thesis2: "Clasificación de Enfermedades de Hojas de Plantas Usando Técnicas de Aprendizaje Profundo",
       email: "Correo electrónico: giovannycaluna@gmail.com",

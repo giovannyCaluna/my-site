@@ -5,12 +5,16 @@ import EducationCard from './../components/landing/EducationCard';
 import WorkExperienceCard from '../components/landing/WorkExperienceCard';
 import HobbiesCard from './../components/landing/HobbiesCard';
 import SkillsCard from './../components/landing/SkillsCard';
+import SocialMediaLinks from './../components/landing/SocialMediaLinks';
+import { Stack } from 'react-bootstrap';
 
 const LandingPage = () => {
   return (
-    <Grid container spacing={2} sx={{ margin:5 }} flexDirection={"row"}>
+    <Stack>
+<Grid container spacing={2} sx={{ margin:5 }} flexDirection={"row"}>
       <Grid size={{ xs: 12, sm: 12 }}>
         <Header />
+
       </Grid>
       <Grid size={{ xs: 12, sm: 3 }}>
         <EducationCard />
@@ -25,6 +29,13 @@ const LandingPage = () => {
         <HobbiesCard />
       </Grid>
     </Grid>
+    
+    <SocialMediaLinks />
+
+    </Stack>
+    
+
+
   );
 };
 

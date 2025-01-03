@@ -1,44 +1,68 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button, Box } from '@mui/material';
+import { Card, CardContent, Typography, Button, Box, CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
-import StartIcon from '@mui/icons-material/PlayArrow';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
 const SkillsCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card sx={{ maxWidth: 345, margin: 'auto', padding: 2 }}>
+    <Card
+      sx={{
+        maxWidth: 400,
+        margin: 'auto',
+        boxShadow: 3,
+        borderRadius: 3,
+        overflow: 'hidden',
+        transition: 'transform 0.3s ease-in-out',
+        '&:hover': {
+          transform: 'scale(1.05)',
+        },
+      }}
+    >
+      {/* Icon Section */}
       <Box
         display="flex"
         justifyContent="center"
         alignItems="center"
         sx={{
-          height: 100,
-          backgroundColor: '#f5f5f5',
-          marginBottom: 2,
+          height: 120,
+          backgroundColor: '#e3f2fd',
+          borderBottom: '1px solid #ddd',
         }}
       >
-        <PsychologyIcon sx={{ fontSize: 64, color: '#1976d2' }} />
+        <PsychologyIcon sx={{ fontSize: 72, color: '#1976d2' }} />
       </Box>
 
-      <CardContent sx={{textAlign:"center"}}>
-        <Typography variant="h5" component="div" sx={{ marginBottom: 2 }}>
+      {/* Content Section */}
+      <CardContent sx={{ textAlign: 'center', paddingBottom: 0 }}>
+        <Typography variant="h5" component="div" sx={{ marginBottom: 1, fontWeight: 'bold' }}>
           {t('skills')}
         </Typography>
-        
+      </CardContent>
+
+      {/* Actions Section */}
+      <CardActions sx={{ justifyContent: 'center', paddingBottom: 2 }}>
         <Button
           variant="contained"
           color="primary"
           component={Link}
-          to="/home"
-          fullWidth
+          to="/skills"
+          size="large"
+          startIcon={<PsychologyIcon />}
+          sx={{
+            textTransform: 'capitalize',
+            fontWeight: 'bold',
+            boxShadow: 2,
+            '&:hover': {
+              backgroundColor: '#1565c0',
+            },
+          }}
         >
           {t('explore')}
-          </Button>
-      </CardContent>
+        </Button>
+      </CardActions>
     </Card>
   );
 };
