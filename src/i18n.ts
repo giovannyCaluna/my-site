@@ -27,9 +27,11 @@ interface Resources {
       degree1: string;
       institution1: string;
       thesis1: string;
+      description1: string;
       degree2: string;
       institution2: string;
       thesis2: string;
+      description2: string;
       email: string;
       phone: string;
       location: string;
@@ -65,9 +67,11 @@ const resources: Resources = {
       degree1: "MSc in Computer Science",
       institution1: "University of Szeged, Hungary (2022-2024)",
       thesis1: "Privacy-Based Blockchain Electronic Voting System",
+      description1: "In 2022, I was honored to receive the Stipendium Hungaricum, a prestigious scholarship from the Hungarian government. This incredible opportunity allowed me to advance my academic development while experiencing the rich culture and history of Europe.",
       degree2: "BSc in Information Technology",
       institution2: "Yachay Tech University, Ecuador (2014-2020)",
       thesis2: "Classification of Plant Leaf Diseases Using Deep Learning Techniques",
+      description2: "",
       email: "Email: giovannycaluna@gmail.com",
       phone: "Phone: +36707859869",
       location: "Location: Szeged, Hungary",
@@ -141,9 +145,11 @@ const resources: Resources = {
       degree1: "Máster en Ciencias de la Computación",
       institution1: "Universidad de Szeged, Hungría (2022-2024)",
       thesis1: "Sistema de Votación Electrónica Blockchain Enfocado en Privacidad",
+      description1:"En 2022, tuve el honor de recibir el Stipendium Hungaricum, una prestigiosa beca del gobierno húngaro. Esta increíble oportunidad me permitió avanzar en mi formación académica mientras disfrutaba de la rica cultura e historia de Europa.",
       degree2: "Ingeniería en Tecnologías de la Información",
       institution2: "Universidad Yachay Tech, Ecuador (2014-2020)",
       thesis2: "Clasificación de Enfermedades de Hojas de Plantas Usando Técnicas de Aprendizaje Profundo",
+      description2: "",
       email: "Correo electrónico: giovannycaluna@gmail.com",
       phone: "Teléfono: +36707859869",
       location: "Ubicación: Szeged, Hungría",

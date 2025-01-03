@@ -8,6 +8,7 @@ interface EducationCardProps {
   institution: string;
   thesis: string;
   image: string;
+  description: string; 
 }
 
 const EducationCard: React.FC<EducationCardProps> = ({
@@ -15,6 +16,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
   institution,
   thesis,
   image,
+  description,
 }) => {
   const { t } = useTranslation();
 
@@ -53,6 +55,9 @@ const EducationCard: React.FC<EducationCardProps> = ({
           </Typography>
           <Typography variant="body2" component="p" color="text.secondary">
             <strong>{t("thesis")}:</strong> {t(thesis)}
+          </Typography>
+          <Typography sx={{marginTop:1}}variant="body2" component="p" color="text.secondary">
+         {t(description)}
           </Typography>
         </Grid>
       </Grid>

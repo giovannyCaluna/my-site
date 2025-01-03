@@ -18,12 +18,14 @@ function EducationPage(): JSX.Element {
             institution: 'institution1',
             thesis: 'thesis1',
             image: szegedImage,
+            description: 'description1',
         },
         {
             degree: 'degree2',
             institution: 'institution2',
             thesis: 'thesis2',
             image: yachayImage,
+            description: 'description2',
         },
     ];
 
@@ -49,6 +51,7 @@ function EducationPage(): JSX.Element {
                             institution={edu.institution}
                             thesis={edu.thesis}
                             image={edu.image}
+                            description={edu.description}
                         />
                 ))}
             </Container>
