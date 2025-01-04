@@ -42,6 +42,8 @@ interface Resources {
       skills: string;
       skillsList: string[];
       workExperience: string;
+      workExperience_subtitle: string;
+
       workExperienceList: WorkExperienceItem[];
 
     };
@@ -71,7 +73,7 @@ const resources: Resources = {
       degree2: "BSc in Information Technology",
       institution2: "Yachay Tech University, Ecuador (2014-2020)",
       thesis2: "Classification of Plant Leaf Diseases Using Deep Learning Techniques",
-      description2: "",
+      description2: "In 2014, a new university was founded in Ecuador. Driven by a desire to explore opportunities beyond traditional universities, I moved from Quito to Urcuquí. Yachay Tech University was created with the mission of advancing research and innovation in Ecuador. This transformative experience allowed me to learn from world-class professors and collaborate with exceptionally talented peers. Undoubtedly, Yachay Tech reshaped my perspective and became the cornerstone of my professional career and personal growth.",
       email: "Email: giovannycaluna@gmail.com",
       phone: "Phone: +36707859869",
       location: "Location: Szeged, Hungary",
@@ -88,6 +90,7 @@ const resources: Resources = {
         "Languages: Spanish (Native), English (Advanced)",
       ],
       workExperience: "Work Experience",
+      workExperience_subtitle: "After completing my bachelor's degree, I secured my first job during the challenging times of the pandemic.",
       workExperienceList: [
         {
           title: "Full Stack Developer",
@@ -149,7 +152,7 @@ const resources: Resources = {
       degree2: "Ingeniería en Tecnologías de la Información",
       institution2: "Universidad Yachay Tech, Ecuador (2014-2020)",
       thesis2: "Clasificación de Enfermedades de Hojas de Plantas Usando Técnicas de Aprendizaje Profundo",
-      description2: "",
+      description2: "En 2014, se fundó una nueva universidad en Ecuador. Impulsado por el deseo de explorar oportunidades más allá de las universidades tradicionales, me mudé de Quito a Urcuquí. La Universidad Yachay Tech fue creada con la misión de impulsar la investigación y la innovación en Ecuador. Esta experiencia transformadora me permitió aprender de profesores de clase mundial y colaborar con compañeros excepcionalmente talentosos. Sin lugar a dudas, Yachay Tech transformó mi perspectiva y se convirtió en la piedra angular de mi carrera profesional y mi crecimiento personal.",
       email: "Correo electrónico: giovannycaluna@gmail.com",
       phone: "Teléfono: +36707859869",
       location: "Ubicación: Szeged, Hungría",
@@ -166,6 +169,7 @@ const resources: Resources = {
         "Idiomas: Español (Nativo), Inglés (Avanzado)",
       ],
       workExperience: "Experiencia Laboral",
+      workExperience_subtitle: "Después de completar mis estudios de ingeniería, conseguí mi primer empleo durante los  desafiantes tiempos de la pandemia.",
       workExperienceList: [
         {
           title: "Desarrollador Full Stack",
