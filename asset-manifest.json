@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.ca67ef22.css",
-    "main.js": "/my-site/static/js/main.e0a8804b.js",
+    "main.js": "/my-site/static/js/main.b159ab0b.js",
     "static/js/488.fc8c46bb.chunk.js": "/my-site/static/js/488.fc8c46bb.chunk.js",
     "static/media/szeged.jpg": "/my-site/static/media/szeged.782a291817f474f2b8ca.jpg",
     "static/media/yachay.jpg": "/my-site/static/media/yachay.24a84ecca0a3997debdd.jpg",
     "static/media/gio.jpg": "/my-site/static/media/gio.2b2f5cb7d9b5e2c8f818.jpg",
     "static/media/ecuadorianflag.png": "/my-site/static/media/ecuadorianflag.ad539ade8af2f81db938.png",
+    "static/media/kontri.png": "/my-site/static/media/kontri.e5484f25202db9b4e365.png",
+    "static/media/kruger.png": "/my-site/static/media/kruger.88034b0a91fedb6878e4.png",
     "static/media/usflag.png": "/my-site/static/media/usflag.82efa07a8eabda6736be.png",
     "index.html": "/my-site/index.html",
     "main.ca67ef22.css.map": "/my-site/static/css/main.ca67ef22.css.map",
-    "main.e0a8804b.js.map": "/my-site/static/js/main.e0a8804b.js.map",
+    "main.b159ab0b.js.map": "/my-site/static/js/main.b159ab0b.js.map",
     "488.fc8c46bb.chunk.js.map": "/my-site/static/js/488.fc8c46bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca67ef22.css",
-    "static/js/main.e0a8804b.js"
+    "static/js/main.b159ab0b.js"
   ]
 }
