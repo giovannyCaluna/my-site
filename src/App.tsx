@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage';
 import NotFound from './pages/NotFound';
 import Education from './pages/education/EducationPage';
 import WorkExperience from './pages/work/WorkExperiencePage';
+import Skills from './pages/skills/SkillsPage';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="/home" element={<Home />} />
         <Route path='/education' element={<Education />} />
         <Route path='/work-experience' element={<WorkExperience />} />
+        <Route path='/skills' element={<Skills />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

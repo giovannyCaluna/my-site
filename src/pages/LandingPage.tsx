@@ -14,7 +14,6 @@ const LandingPage = () => {
 <Grid container spacing={2} sx={{ margin:5 }} flexDirection={"row"}>
       <Grid size={{ xs: 12, sm: 12 }}>
         <Header />
-
       </Grid>
       <Grid size={{ xs: 12, sm: 3 }}>
         <EducationCard />

@@ -6,7 +6,6 @@ import PsychologyIcon from '@mui/icons-material/Psychology';
 
 const SkillsCard = () => {
   const { t } = useTranslation();
-
   return (
     <Card
       sx={{

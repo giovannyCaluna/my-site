@@ -40,6 +40,7 @@ interface Resources {
       profile: string;
       profileContent: string;
       skills: string;
+      skills_subtitle: string;
       skillsList: string[];
       workExperience: string;
       workExperience_subtitle: string;
@@ -89,6 +90,7 @@ const resources: Resources = {
         "Other Tools: Docker, GCP, Kubernetes, Jenkins",
         "Languages: Spanish (Native), English (Advanced)",
       ],
+      skills_subtitle: "Throughout my academic journey and professional experience, I have acquired and honed a diverse set of skills across various programming languages, tools, and technologies. Below are some of the key competencies I offer",
       workExperience: "Work Experience",
       workExperience_subtitle: "After completing my bachelor's degree, I secured my first job during the challenging times of the pandemic.",
       workExperienceList: [
@@ -161,6 +163,7 @@ const resources: Resources = {
       profile: "Perfil",
       profileContent: "Científico informático dinámico y adaptable con un historial comprobado en desarrollo de software y personalización de modelos de IA/ML. Hábil en Java (Spring Boot), TypeScript (React, Angular, Nest), Python y R, con experiencia en aplicaciones web descentralizadas (Blockchain, Web3). Altamente motivado y dispuesto a reubicarse, listo para contribuir a proyectos innovadores.",
       skills: "Habilidades",
+      skills_subtitle: "A lo largo de mi trayectoria académica y experiencia profesional, he adquirido y perfeccionado un conjunto diverso de habilidades en varios lenguajes de programación, herramientas y tecnologías. A continuación, se presentan algunas de las competencias clave que ofrezco",
       skillsList: [
         "Lenguajes de Programación: Java, TypeScript, SQL, Python, R, C++, C#, Solidity",
         "Desarrollo de Software: Spring Boot, React, Angular, Nest, Strapi",
