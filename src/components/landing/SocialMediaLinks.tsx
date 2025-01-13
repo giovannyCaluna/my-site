@@ -42,12 +42,6 @@ const SocialMediaLinks: React.FC = () => {
             icon: <LinkedInIcon fontSize="large" />,
         },
         {
-            name: 'Facebook',
-            href: 'https://www.facebook.com/giovanny_eduardo',
-            color: '#1877F2',
-            icon: <FacebookIcon fontSize="large" />,
-        },
-        {
             name: 'WhatsApp',
             href: 'https://wa.me/+593982448042', // Replace "yourphonenumber" with your WhatsApp number
             color: '#25D366',

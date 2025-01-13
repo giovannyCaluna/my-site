@@ -1,16 +1,15 @@
-import React from 'react';
-import SkillCategory from '../../components/skills/SkillCategory';
-import { SkillCategory as SkillCategoryType } from '../../components/skills/types';
-import {  Container, List, ListItem, ListItemText } from '@mui/material';
+import { Container, Stack } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import SkillsHeader from '../../components/skills/SkillsHeader';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import SkillBar from '@/components/skills/SkillBar';
+import SkillCategory from '../../components/skills/SkillCategory';
+import SkillsHeader from '../../components/skills/SkillsHeader';
+import { SkillCategory as SkillCategoryType } from '../../components/skills/types';
 
 const SkillsPage: React.FC = () => {
-    const { t } = useTranslation();
-    const skills: string[] = t('skillsList', { returnObjects: true }) as unknown as string[];
+  const { t } = useTranslation();
 
+  // Skills data
   const skillsData: SkillCategoryType[] = [
     {
       category: 'Frontend',
@@ -25,54 +24,39 @@ const SkillsPage: React.FC = () => {
       skills: [
         { name: 'Node.js', level: 80 },
         { name: 'Express.js', level: 75 },
+        { name: 'Spring Boot', level: 'Experienced' },
+        { name: 'Nest', level: 'Experienced' },
+        { name: 'Strapi', level: 'Experienced' },
       ],
     },
+    // Add other categories here...
     {
-      category: 'Tools',
+      category: 'Languages',
       skills: [
-        { name: 'Git', level: 85 },
-        { name: 'Webpack', level: 70 },
+        { name: 'Spanish', level: 'Native' },
+        { name: 'English', level: 'Advanced' },
       ],
     },
   ];
 
   return (
+    <>
+      {/* Header Section */}
+      <Grid container spacing={2} flexDirection={"row"}>
+        <Grid size={{ xs: 12 }}>
+          <Container>
+            <SkillsHeader title={t('skills')} subtitle={t('skills_subtitle')} />
+          </Container>
+        </Grid>
+      </Grid>
 
-    <Grid container spacing={2} flexDirection={"row"}>
-    {/* Image Section */}
-    <Grid size={{ xs: 12, sm: 12 }}>
-        {/* Page Header */}
-        <Container>
-            <SkillsHeader
-                title={t("skills")}
-                subtitle={t("skills_subtitle")}
-            />
-        </Container>
-    </Grid>
-    {/* Education Cards */}
-    <Grid size={{ xs: 12, sm: 12 }}>
-   
-    {/* <Container>
-        {education.map((edu, index) => (
-                <EducationCard
-                    degree={edu.degree}
-                    institution={edu.institution}
-                    thesis={edu.thesis}
-                    image={edu.image}
-                    description={edu.description}
-                />
+      {/* Skills Categories */}
+      <Stack sx={{ alignItems: "center", marginTop: 4 }}>
+        {skillsData.map((category, index) => (
+          <SkillCategory key={index} category={category} />
         ))}
-    </Container> */}
-    </Grid>
-
-    <div style={{ padding: '20px' }}>
-      <h1>My Skills</h1>
-      {skillsData.map((category, index) => (
-        <SkillCategory key={index} category={category} />
-      ))}
-    </div>
-</Grid>
-   
+      </Stack>
+    </>
   );
 };
 
