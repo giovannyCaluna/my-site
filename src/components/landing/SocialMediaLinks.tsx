@@ -1,11 +1,9 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
+import GithubIcon from '@mui/icons-material/GitHub'; // Represents GitHub
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MusicNoteIcon from '@mui/icons-material/MusicNote'; // Represents TikTok
-import GithubIcon from '@mui/icons-material/GitHub'; // Represents GitHub
 import TwitterIcon from '@mui/icons-material/Twitter'; // Represents X
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Box, IconButton, Tooltip, Typography } from '@mui/material';
+import { Box, IconButton, Tooltip } from '@mui/material';
 import React from 'react';
 
 // Define a type for social media links

@@ -14,22 +14,64 @@ const SkillsPage: React.FC = () => {
     {
       category: 'Frontend',
       skills: [
-        { name: 'ReactJS', level: 90 },
-        { name: 'HTML', level: 95 },
-        { name: 'CSS', level: 85 },
+        { name: 'React', level: 80 },
+        { name: 'Angular', level: 60 },
       ],
     },
     {
       category: 'Backend',
       skills: [
-        { name: 'Node.js', level: 80 },
+        { name: 'Spring Boot', level: 80 },
+        { name: 'Node.js', level: 70 },
         { name: 'Express.js', level: 75 },
-        { name: 'Spring Boot', level: 'Experienced' },
-        { name: 'Nest', level: 'Experienced' },
-        { name: 'Strapi', level: 'Experienced' },
       ],
     },
-    // Add other categories here...
+    {
+      category: 'Programming Languages',
+      skills: [
+        { name: 'Java', level: 90 },
+        { name: 'Javascript', level: 70 },
+        { name: 'Typescript', level: 70 },
+        { name: 'Python', level: 60 },
+        {name:"C", level: 60},
+        {name:"C++", level: 60},
+        {name:"Solidity", level: 50},
+        {name:"R", level: 50},
+
+      ],
+    },
+    {
+      category: 'Databases',
+      skills: [
+        { name: 'PostgreSQL', level: 80 },
+        { name: 'MySQL', level: 65 },
+        { name: 'MongoDB', level: 50 },
+      ],
+    },
+    {
+      category: 'SD Tools',
+      skills: [
+        { name: 'Git', level: 90 },
+        { name: 'Docker', level: 75 },
+        { name: 'Jenkins', level: 50 },
+        { name: 'Kubernetes', level: 50 },
+      ],
+    },
+    {
+      category: 'Cloud',
+      skills: [
+        { name: 'Google Cloud', level: 75 },
+        { name: 'Azure', level: 40 },
+      ],
+    },
+    {
+      category: 'Operating Systems',
+      skills: [
+        { name: 'Linux - Ubuntu', level: 90 },
+        { name: 'Windows', level: 80 },
+      ],
+    },
+
     {
       category: 'Languages',
       skills: [
