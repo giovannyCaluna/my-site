@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Education from './pages/education/EducationPage';
 import WorkExperience from './pages/work/WorkExperiencePage';
 import Skills from './pages/skills/SkillsPage';
+import HobbiesPage from './pages/hobbies/HobbiesPage';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path='/education' element={<Education />} />
         <Route path='/work-experience' element={<WorkExperience />} />
         <Route path='/skills' element={<Skills />} />
+        <Route path='/hobbies' element={<HobbiesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
