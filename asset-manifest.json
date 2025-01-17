@@ -1,22 +1,27 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.ca67ef22.css",
-    "main.js": "/my-site/static/js/main.f1697e24.js",
+    "main.js": "/my-site/static/js/main.eb03a4a5.js",
     "static/js/488.fc8c46bb.chunk.js": "/my-site/static/js/488.fc8c46bb.chunk.js",
+    "static/media/bachata.mp4": "/my-site/static/media/bachata.d26619516928ba298e5d.mp4",
     "static/media/szeged.jpg": "/my-site/static/media/szeged.782a291817f474f2b8ca.jpg",
     "static/media/yachay.jpg": "/my-site/static/media/yachay.24a84ecca0a3997debdd.jpg",
+    "static/media/gym3.jpg": "/my-site/static/media/gym3.5a1a59eb1fa9872099a9.jpg",
+    "static/media/gym2.jpg": "/my-site/static/media/gym2.bec17daa4f4b428e23e2.jpg",
+    "static/media/gym.jpg": "/my-site/static/media/gym.c8636c6237010ac54671.jpg",
     "static/media/gio.jpg": "/my-site/static/media/gio.2b2f5cb7d9b5e2c8f818.jpg",
     "static/media/ecuadorianflag.png": "/my-site/static/media/ecuadorianflag.ad539ade8af2f81db938.png",
     "static/media/kontri.png": "/my-site/static/media/kontri.e5484f25202db9b4e365.png",
     "static/media/kruger.png": "/my-site/static/media/kruger.88034b0a91fedb6878e4.png",
+    "static/media/uszeged.png": "/my-site/static/media/uszeged.296cce05e19ba02121a3.png",
     "static/media/usflag.png": "/my-site/static/media/usflag.82efa07a8eabda6736be.png",
     "index.html": "/my-site/index.html",
     "main.ca67ef22.css.map": "/my-site/static/css/main.ca67ef22.css.map",
-    "main.f1697e24.js.map": "/my-site/static/js/main.f1697e24.js.map",
+    "main.eb03a4a5.js.map": "/my-site/static/js/main.eb03a4a5.js.map",
     "488.fc8c46bb.chunk.js.map": "/my-site/static/js/488.fc8c46bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca67ef22.css",
-    "static/js/main.f1697e24.js"
+    "static/js/main.eb03a4a5.js"
   ]
 }
