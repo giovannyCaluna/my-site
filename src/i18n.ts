@@ -5,6 +5,8 @@ import { initReactI18next } from 'react-i18next';
 interface WorkExperienceItem {
   title: string;
   company: string;
+  country: string;
+  modality: string;
   responsibilities: string[];
 }
 
@@ -14,6 +16,7 @@ interface Resources {
       home: string;
       welcome: string;
       hobbies: string;
+      hobbies_description: string;
       greeting: string;
       thesis: string;
       start: string;
@@ -56,6 +59,7 @@ const resources: Resources = {
     translation: {
       home: "Home",
       hobbies: "Hobbies",
+      hobbies_description: "Throughout my life, I have explored various physical activities, including gym workouts, CrossFit, and calisthenics. While studying in Hungary, I developed a passion for dance, particularly Bachata and Salsa.",
       welcome: "Welcome to my personal blog!",
       greeting: "  Hi! I’m Giovanny Caluña, a passionate software developer with expertise in Java, TypeScript, React, and more. I have a strong background in computer science and specialize in creating efficient, reliable solutions in the financial systems domain. Explore my work, connect with me, and let’s build something amazing together!",
       start: "Start",
@@ -97,15 +101,19 @@ const resources: Resources = {
         {
           title: "Full Stack Developer",
           company: "Digevo (January 2025 – Present)",
+          country: "Chile",
+          modality: "Remote",
           responsibilities: [
-            "Developing dynamic web applications using React.",
-            "Integrating backend services with Strapi for efficient content management.",
-            "Customizing Strapi web services for unique client needs.",
+            "Integrate MercadoPago payments using React nad Node JS",
+            "Stablish strategies to recover and increase subscription payments",
+            "Customizing a wordpress theme for a client",
           ],
         },
         {
           title: "Full Stack Developer",
           company: "Urba Digital (June 2024 – December 2024)",
+          country: "Ecuador",
+          modality: "Remote",
           responsibilities: [
             "Developing dynamic web applications using React.",
             "Integrating backend services with Strapi for efficient content management.",
@@ -115,18 +123,40 @@ const resources: Resources = {
         {
           title: "Full Stack Developer",
           company: "Kontri.io (Feb 2024 – May 2024)",
+          country: "Hungary",
+          modality: "Remote",
           responsibilities: [
-            "Handled data migration, ETL, and API integration scripts.",
+            "Handled data migration from cryptocurrencies platforms with Nest js.",
             "Utilized GCP services to optimize data storage and workflows.",
+            "Desing and develop components in React with material UI.",
+          ],
+        },
+        {
+          title: "Intenrship",
+          company: "University of Szeged (Software Development Deparment) (December 2023 – January 2024)",
+          country: "Hungary",
+          modality: "Remote",
+          responsibilities: [
+            " Designed and developed a comprehensive web application for student internship registrations, meeting all functional requirements.",
+            "Deployed and debugged applications using Google Firebase services, ensuring a smooth user experience.",
+            "Applied Object-Oriented Analysis and Design principles to achieve modular and scalable solutions.",
+            "Documented all development phases, ensuring clarity and maintainability for future iterations.",
+            "Utilized GCP services to optimize data storage and workflows."
           ],
         },
         {
           title: "Full Stack Developer",
           company: "Kruger Corporation (Jan 2021 – Dec 2023)",
+          country: "Ecuador",
+          modality: "Remote",
           responsibilities: [
-            "Developed containerized applications with Docker for scalability.",
-            "Designed, implemented, and documented RESTful APIs.",
-            "Enhanced CI/CD pipelines for efficient software delivery.",
+            "Led Java-based application development in a containerized environment (Docker), enhancing scalability and efficiency.",
+            "Optimized Cron Jobs with Java Threads for improved operational performance.",
+            "Designed and implemented database architectures, improving data consistency and application performance.",
+            " Enhanced CI/CD pipelines to streamline software deployment and ensure system reliability.",
+            "Delivered well-documented RESTful APIs, adhering to industry best practices.",
+            "Collaborated with product and QA teams to resolve critical issues and improve system reliability.",
+            "Implemented and managed RabbitMQ for message queuing, facilitating asynchronous processing and improving system responsiveness."
           ],
         },
       ],
@@ -136,6 +166,7 @@ const resources: Resources = {
     translation: {
       home: "Inicio",
       hobbies: "Pasatiempos",
+      hobbies_description: "A lo largo de mi vida, he explorado diversas actividades físicas, como entrenamientos en el gimnasio, CrossFit y calistenia. Durante mis estudios en Hungría, desarrollé una pasión por el baile, especialmente Bachata y Salsa.",
       welcome: "Bienvenido a mi blog personal",
       greeting: "¡Hola! Soy Giovanny Caluña, un apasionado desarrollador de software con experiencia en Java, TypeScript, React y más. Tengo una sólida formación en informática y me especializo en la creación de soluciones eficientes y confiables en el ámbito de los sistemas financieros. ¡Explora mi trabajo, conéctate conmigo y construyamos algo increíble juntos!",
       start: "Iniciar",
@@ -150,7 +181,7 @@ const resources: Resources = {
       degree1: "Máster en Ciencias de la Computación",
       institution1: "Universidad de Szeged, Hungría (2022-2024)",
       thesis1: "Sistema de Votación Electrónica Blockchain Enfocado en Privacidad",
-      description1:"En 2022, tuve el honor de recibir el Stipendium Hungaricum, una prestigiosa beca del gobierno húngaro. Esta increíble oportunidad me permitió avanzar en mi formación académica mientras disfrutaba de la rica cultura e historia de Europa.",
+      description1: "En 2022, tuve el honor de recibir el Stipendium Hungaricum, una prestigiosa beca del gobierno húngaro. Esta increíble oportunidad me permitió avanzar en mi formación académica mientras disfrutaba de la rica cultura e historia de Europa.",
       degree2: "Ingeniería en Tecnologías de la Información",
       institution2: "Universidad Yachay Tech, Ecuador (2014-2020)",
       thesis2: "Clasificación de Enfermedades de Hojas de Plantas Usando Técnicas de Aprendizaje Profundo",
@@ -173,43 +204,72 @@ const resources: Resources = {
       ],
       workExperience: "Experiencia Laboral",
       workExperience_subtitle: "Después de completar mis estudios de ingeniería, conseguí mi primer empleo durante los  desafiantes tiempos de la pandemia.",
+
       workExperienceList: [
         {
-          title: "Desarrollador Full Stack",
-          company: "Digevo (Enero 2025 – Presente)",
-          responsibilities: [
-            "Desarrollando aplicaciones web dinámicas utilizando React.",
-            "Integrando servicios backend con Strapi para una gestión eficiente de contenidos.",
-            "Personalizando los servicios web de Strapi para necesidades únicas de los clientes.",
-          ],
+          "title": "Desarrollador Full Stack",
+          "company": "Digevo (Enero 2025 – Presente)",
+          "country": "Chile",
+          "modality": "Remoto",
+          "responsibilities": [
+            "Integración de pagos con MercadoPago utilizando React y Node.js.",
+            "Diseño e implementación de estrategias para recuperar y aumentar los pagos de suscripción.",
+            "Personalización de un tema de WordPress para un cliente."
+          ]
         },
         {
-          title: "Desarrollador Full Stack",
-          company: "Urba Digital (Junio 2024 – Diciembre 2024)",
-          responsibilities: [
-            "Desarrollando aplicaciones web dinámicas utilizando React.",
-            "Integrando servicios backend con Strapi para una gestión eficiente de contenidos.",
-            "Personalizando los servicios web de Strapi para necesidades únicas de los clientes.",
-          ],
+          "title": "Desarrollador Full Stack",
+          "company": "Urba Digital (Junio 2024 – Diciembre 2024)",
+          "country": "Ecuador",
+          "modality": "Remoto",
+          "responsibilities": [
+            "Desarrollo de aplicaciones web dinámicas utilizando React.",
+            "Integración de servicios backend con Strapi para una gestión eficiente de contenido.",
+            "Personalización de servicios web de Strapi para necesidades únicas de los clientes."
+          ]
         },
         {
-          title: "Desarrollador Full Stack",
-          company: "Kontri.io (Feb 2024 – Mayo 2024)",
-          responsibilities: [
-            "Manejando migración de datos, ETL y scripts de integración de APIs.",
-            "Utilizando servicios de GCP para optimizar el almacenamiento de datos y los flujos de trabajo.",
-          ],
+          "title": "Desarrollador Full Stack",
+          "company": "Kontri.io (Febrero 2024 – Mayo 2024)",
+          "country": "Hungría",
+          "modality": "Remoto",
+          "responsibilities": [
+            "Migración de datos desde plataformas de criptomonedas utilizando Nest.js.",
+            "Optimización del almacenamiento de datos y flujos de trabajo mediante servicios de GCP.",
+            "Diseño y desarrollo de componentes en React con Material UI."
+          ]
         },
         {
-          title: "Desarrollador Full Stack",
-          company: "Kruger Corporation (Enero 2021 – Diciembre 2023)",
-          responsibilities: [
-            "Desarrollando aplicaciones contenerizadas con Docker para escalabilidad.",
-            "Diseñando, implementando y documentando APIs RESTful.",
-            "Mejorando pipelines CI/CD para una entrega de software eficiente.",
-          ],
+          "title": "Practicante",
+          "company": "Universidad de Szeged (Departamento de Desarrollo de Software) (Diciembre 2023 – Enero 2024)",
+          "country": "Hungría",
+          "modality": "Remoto",
+          "responsibilities": [
+            "Diseño y desarrollo de una aplicación web integral para el registro de prácticas estudiantiles, cumpliendo con todos los requisitos funcionales.",
+            "Despliegue y depuración de aplicaciones utilizando servicios de Google Firebase, garantizando una experiencia de usuario fluida.",
+            "Aplicación de principios de análisis y diseño orientado a objetos para lograr soluciones modulares y escalables.",
+            "Documentación de todas las fases de desarrollo para garantizar claridad y mantenibilidad.",
+            "Optimización del almacenamiento de datos y flujos de trabajo mediante servicios de GCP."
+          ]
         },
-      ],
+        {
+          "title": "Desarrollador Full Stack",
+          "company": "Kruger Corporation (Enero 2021 – Diciembre 2023)",
+          "country": "Ecuador",
+          "modality": "Remoto",
+          "responsibilities": [
+            "Liderazgo en el desarrollo de aplicaciones basadas en Java en un entorno contenedor (Docker), mejorando la escalabilidad y eficiencia.",
+            "Optimización de trabajos Cron utilizando hilos en Java para un mejor rendimiento operativo.",
+            "Diseño e implementación de arquitecturas de bases de datos, mejorando la consistencia de datos y el rendimiento de las aplicaciones.",
+            "Mejora de las canalizaciones de CI/CD para agilizar el despliegue de software y garantizar la fiabilidad del sistema.",
+            "Entrega de APIs RESTful bien documentadas, cumpliendo con las mejores prácticas de la industria.",
+            "Colaboración con equipos de producto y QA para resolver problemas críticos y mejorar la fiabilidad del sistema.",
+            "Implementación y gestión de RabbitMQ para colas de mensajes, facilitando el procesamiento asíncrono y mejorando la capacidad de respuesta del sistema."
+          ]
+        }
+      ]
+
+
     },
   },
 };
