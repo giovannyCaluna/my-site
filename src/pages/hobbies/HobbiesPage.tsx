@@ -9,7 +9,7 @@ const HobbiesPage: React.FC = () => {
   const gym2 = require('./../../assets/gym3.jpg');
   const gym3 = require('./../../assets/gym.jpg');
   const bachata = require('./../../assets/bachata.mp4');
-
+  const salsa = require('./../../assets/salsa.mp4');
   const gym4 = require('./../../assets/gym.jpg');
 
 
@@ -47,7 +47,7 @@ const HobbiesPage: React.FC = () => {
         {
           title: 'Salsa',
           description: 'Exploring rhythm and moves in Salsa dancing.',
-          video: bachata,
+          video: salsa,
         },
       ],
     },
