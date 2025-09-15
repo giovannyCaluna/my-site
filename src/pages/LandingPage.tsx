@@ -6,7 +6,7 @@ import WorkExperienceCard from '../components/landing/WorkExperienceCard';
 import HobbiesCard from './../components/landing/HobbiesCard';
 import SkillsCard from './../components/landing/SkillsCard';
 import SocialMediaLinks from './../components/landing/SocialMediaLinks';
-import { Stack } from 'react-bootstrap';
+import { Box, Container } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const LandingPage = () => {
@@ -16,73 +16,97 @@ const LandingPage = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2, // Animates children sequentially
+        staggerChildren: 0.15, // Animates children sequentially
+        delayChildren: 0.3,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+    hidden: { opacity: 0, y: 30, scale: 0.9 },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1,
+      transition: { 
+        duration: 0.6,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      } 
+    },
   };
 
   return (
-    <Stack>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        background: 'linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%)',
+      }}
+    >
       {/* Header */}
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <Header />
       </motion.div>
 
-      {/* Animated Grid */}
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <Grid container spacing={2} sx={{ margin: 5 }} flexDirection={"row"}>
-          {/* Education Card */}
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <motion.div variants={itemVariants}>
-              <EducationCard />
-            </motion.div>
-          </Grid>
+      {/* Main Content */}
+      <Container maxWidth="xl" sx={{ py: 8 }}>
+        {/* Animated Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <Grid 
+            container 
+            spacing={4} 
+            sx={{ 
+              justifyContent: 'center',
+              alignItems: 'stretch',
+            }}
+          >
+            {/* Education Card */}
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+              <motion.div variants={itemVariants} style={{ height: '100%' }}>
+                <EducationCard />
+              </motion.div>
+            </Grid>
 
-          {/* Work Experience Card */}
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <motion.div variants={itemVariants}>
-              <WorkExperienceCard />
-            </motion.div>
-          </Grid>
+            {/* Work Experience Card */}
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+              <motion.div variants={itemVariants} style={{ height: '100%' }}>
+                <WorkExperienceCard />
+              </motion.div>
+            </Grid>
 
-          {/* Skills Card */}
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <motion.div variants={itemVariants}>
-              <SkillsCard />
-            </motion.div>
-          </Grid>
+            {/* Skills Card */}
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+              <motion.div variants={itemVariants} style={{ height: '100%' }}>
+                <SkillsCard />
+              </motion.div>
+            </Grid>
 
-          {/* Hobbies Card */}
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <motion.div variants={itemVariants}>
-              <HobbiesCard />
-            </motion.div>
+            {/* Hobbies Card */}
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+              <motion.div variants={itemVariants} style={{ height: '100%' }}>
+                <HobbiesCard />
+              </motion.div>
+            </Grid>
           </Grid>
-        </Grid>
-      </motion.div>
+        </motion.div>
 
-      {/* Social Media Links */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        <SocialMediaLinks />
-      </motion.div>
-    </Stack>
+        {/* Social Media Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        >
+          <SocialMediaLinks />
+        </motion.div>
+      </Container>
+    </Box>
   );
 };
 
