@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter'; // Represents X
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Box, IconButton, Tooltip, Container, Typography } from '@mui/material';
+import { Box, IconButton, Tooltip, Container, Typography, useTheme } from '@mui/material';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -16,6 +16,8 @@ interface SocialMediaLink {
 }
 
 const SocialMediaLinks: React.FC = () => {
+    const theme = useTheme();
+    
     // Array of social media links
     const links: SocialMediaLink[] = [
         {
@@ -78,13 +80,20 @@ const SocialMediaLinks: React.FC = () => {
             <Box 
                 sx={{
                     textAlign: 'center',
-                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%)',
+                    bgcolor: theme.palette.mode === 'dark' 
+                        ? 'rgba(30, 41, 59, 0.8)' 
+                        : 'rgba(255, 255, 255, 0.9)',
                     backdropFilter: 'blur(10px)',
                     borderRadius: 4,
                     py: 6,
                     px: 4,
-                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: theme.palette.mode === 'dark'
+                        ? '0 8px 32px rgba(0, 0, 0, 0.3)'
+                        : '0 8px 32px rgba(0, 0, 0, 0.1)',
+                    border: `1px solid ${theme.palette.mode === 'dark' 
+                        ? 'rgba(255, 255, 255, 0.1)' 
+                        : 'rgba(255, 255, 255, 0.2)'}`,
+                    transition: 'all 0.3s ease',
                 }}
             >
                 <Typography
@@ -136,10 +145,14 @@ const SocialMediaLinks: React.FC = () => {
                                         sx={{
                                             width: 64,
                                             height: 64,
-                                            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                                            backgroundColor: theme.palette.mode === 'dark'
+                                                ? 'rgba(30, 41, 59, 0.8)'
+                                                : 'rgba(255, 255, 255, 0.8)',
                                             backdropFilter: 'blur(10px)',
-                                            border: '2px solid rgba(255, 255, 255, 0.3)',
-                                            color: link.color || '#4a5568',
+                                            border: `2px solid ${theme.palette.mode === 'dark'
+                                                ? 'rgba(255, 255, 255, 0.1)'
+                                                : 'rgba(255, 255, 255, 0.3)'}`,
+                                            color: link.color || theme.palette.text.primary,
                                             transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                                             '&:hover': {
                                                 backgroundColor: link.color,

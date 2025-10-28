@@ -39,7 +39,8 @@ const LandingPage = () => {
     <Box
       sx={{
         minHeight: '100vh',
-        background: 'linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%)',
+        bgcolor: 'background.default',
+        transition: 'background-color 0.3s ease',
       }}
     >
       {/* Header */}
