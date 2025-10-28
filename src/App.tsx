@@ -8,10 +8,12 @@ import Education from './pages/education/EducationPage';
 import WorkExperience from './pages/work/WorkExperiencePage';
 import Skills from './pages/skills/SkillsPage';
 import HobbiesPage from './pages/hobbies/HobbiesPage';
+import ScrollToTop from './components/ScrollToTop';
+import { Box } from '@mui/material';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -22,7 +24,8 @@ const App: React.FC = () => {
         <Route path='/hobbies' element={<HobbiesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+      <ScrollToTop />
+    </Box>
   );
 };
 

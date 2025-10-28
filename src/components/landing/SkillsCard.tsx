@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button, Box, CardActions } from '@mui/material';
+import { Card, CardContent, Typography, Button, Box, CardActions } from '@mui/material';useTheme
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import PsychologyIcon from '@mui/icons-material/Psychology';
@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 const SkillsCard = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
   
   return (
     <motion.div
@@ -21,11 +22,11 @@ const SkillsCard = () => {
           flexDirection: 'column',
           maxWidth: 400,
           margin: 'auto',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+          boxShadow: theme.palette.mode === 'dark' ? '0 4px 20px rgba(0, 0, 0, 0.5)' : '0 4px 20px rgba(0, 0, 0, 0.08)',
           borderRadius: 4,
           overflow: 'hidden',
-          background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
-          border: '1px solid rgba(0, 0, 0, 0.06)',
+          bgcolor: 'background.paper',
+          border: `1px solid ${theme.palette.mode === 'dark' ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.06)'}]`,
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
             boxShadow: '0 20px 40px rgba(0, 0, 0, 0.12)',

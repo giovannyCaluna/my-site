@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button, Box, CardActions } from '@mui/material';
+import { Card, CardContent, Typography, Button, Box, CardActions, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SchoolIcon from '@mui/icons-material/School';
@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 const EducationCard = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   return (
     <motion.div
@@ -21,14 +22,20 @@ const EducationCard = () => {
           flexDirection: 'column',
           maxWidth: 400,
           margin: 'auto',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+          boxShadow: theme.palette.mode === 'dark'
+            ? '0 4px 20px rgba(0, 0, 0, 0.5)'
+            : '0 4px 20px rgba(0, 0, 0, 0.08)',
           borderRadius: 4,
           overflow: 'hidden',
-          background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
-          border: '1px solid rgba(0, 0, 0, 0.06)',
+          bgcolor: 'background.paper',
+          border: `1px solid ${theme.palette.mode === 'dark' 
+            ? 'rgba(255, 255, 255, 0.1)' 
+            : 'rgba(0, 0, 0, 0.06)'}`,
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
-            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.12)',
+            boxShadow: theme.palette.mode === 'dark'
+              ? '0 20px 40px rgba(0, 0, 0, 0.7)'
+              : '0 20px 40px rgba(0, 0, 0, 0.12)',
             transform: 'translateY(-4px)',
             '& .icon-container': {
               background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -47,7 +54,9 @@ const EducationCard = () => {
           alignItems="center"
           sx={{
             height: 140,
-            background: 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)',
+            background: theme.palette.mode === 'dark'
+              ? 'linear-gradient(135deg, #1e293b 0%, #334155 100%)'
+              : 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)',
             transition: 'all 0.3s ease',
             position: 'relative',
             overflow: 'hidden',
@@ -68,7 +77,7 @@ const EducationCard = () => {
           <SchoolIcon 
             sx={{ 
               fontSize: 80, 
-              color: '#1976d2',
+              color: theme.palette.mode === 'dark' ? '#7c8aed' : '#1976d2',
               transition: 'all 0.3s ease',
               zIndex: 1,
               position: 'relative',
@@ -92,10 +101,7 @@ const EducationCard = () => {
             sx={{ 
               marginBottom: 2, 
               fontWeight: 700,
-              background: 'linear-gradient(135deg, #2d3748 0%, #4a5568 100%)',
-              backgroundClip: 'text',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: 'text.primary',
             }}
           >
             {t('education')}
